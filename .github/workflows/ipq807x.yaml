@@ -29,6 +29,24 @@ jobs:
                 echo "CONFIG_PACKAGE_qca-ssdk-shell=y\n" >> .config
                 echo "CONFIG_PACKAGE_wpad-basic-wolfssl=m\n" >> .config
                 echo "CONFIG_PACKAGE_wpad-wolfssl=y\n" >> .config
+                echo "CONFIG_PACKAGE_fping=y\n" >> .config
+                echo "CONFIG_PACKAGE_irqbalance=y\n" >> .config
+                echo "CONFIG_PACKAGE_attendedsysupgrade-common=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-app-attendedsysupgrade=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-i18n-attendedsysupgrade-es=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-i18n-base-es=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-i18n-firewall-es=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-i18n-opkg-es=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-app-statistics=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-i18n-statistics-es=y\n" >> .config
+                echo "CONFIG_PACKAGE_wireguard-tools=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-wireguard=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-app-wireguard=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-proto-wireguard=y\n" >> .config
+                echo "CONFIG_PACKAGE_luci-i18n-wireguard-es=y\n" >> .config
+                echo "CONFIG_PACKAGE_mesh11sd=y\n" >> .config
+                echo "CONFIG_PACKAGE_snmpd=y\n" >> .config
+
                 make defconfig
 
             - name: Download package sources
